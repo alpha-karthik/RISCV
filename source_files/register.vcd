@@ -1,0 +1,96 @@
+$date
+	Tue Mar 14 15:25:55 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 32 ! r2 [31:0] $end
+$var wire 32 " r1 [31:0] $end
+$var reg 5 # addr1 [4:0] $end
+$var reg 5 $ addr2 [4:0] $end
+$var reg 5 % addr3 [4:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' rst $end
+$var reg 32 ( wdata [31:0] $end
+$var reg 1 ) we $end
+$scope module rf $end
+$var wire 5 * addr1 [4:0] $end
+$var wire 5 + addr2 [4:0] $end
+$var wire 5 , addr3 [4:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' clr $end
+$var wire 32 - rd1 [31:0] $end
+$var wire 32 . rd2 [31:0] $end
+$var wire 32 / write_data [31:0] $end
+$var wire 1 ) write_enable $end
+$var integer 32 0 i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+b0 *
+1)
+bx (
+1'
+0&
+bx %
+bx $
+b0 #
+bx "
+bx !
+$end
+#5
+b0 "
+b0 -
+b100000 0
+1&
+#6
+0'
+#10
+0&
+#11
+b111 (
+b111 /
+b100 %
+b100 ,
+#15
+1&
+#20
+0&
+#21
+b111 "
+b111 -
+b100 #
+b100 *
+#25
+1&
+#30
+0&
+#35
+1&
+#40
+0&
+#45
+1&
+#50
+0&
+#55
+1&
+#60
+0&
+#65
+1&
+#70
+0&
+#71
