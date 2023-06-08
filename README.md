@@ -4,7 +4,7 @@ This Repository contains the source files and test files for the design of RISC-
 
 ## Contents 
  ---
-- What is RISCV ISA ?
+- [RISCV ISA](#riscv-isa)
 - RV32I base core ISA
 - Micro-architecture Implementation 
 - RTL Coding for each Block in the Mirco-architecture
@@ -12,7 +12,7 @@ This Repository contains the source files and test files for the design of RISC-
 - Results
 
 ---
-### What is RISCV ISA ?
+### RISCV ISA
 RISC-V is an open-source instruction set architecture(ISA) based on the reduced instruction set computer (RISC) principles. It ws developed at the University of California, Berkeley in 2010.
 
 An Instruction set architecture defiines the set of instructions that a processor can execute and the underlying structure of those instructions. The RISC-V ISA is designed to be simple, modular, and extensible, providing a solid foundation for a wide range of computing devices, from embedded systems to high-performace servers.
