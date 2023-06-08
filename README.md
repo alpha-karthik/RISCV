@@ -33,12 +33,13 @@ I am attaching the link for the image of those instruction set and instruction t
 ---
 ### Micro-architecture Implementation
 __What is Micro-architecture ?__ </br>
-_Micro-architecture, also known as computer organization, refers to the internal design and implementation of a processor or a digital logic system. It focuses on the low-level details of how a processor executes instructions and performs computations_</br>
-        _Micro-architecture involves the design of various components within a processor, including the instruction pipeline, arithmetic and logic units (ALUs), control units, cache hierarchy, memory subsystem, and other functional units. It defines how these components are interconnected and how they work together to execute instructions and process data efficiently._
+Micro-architecture, also known as computer organization, refers to the internal design and implementation of a processor or a digital logic system. It focuses on the low-level details of how a processor executes instructions and performs computations</br>
+        Micro-architecture involves the design of various components within a processor, including the instruction pipeline, arithmetic and logic units (ALUs), control units, cache hierarchy, memory subsystem, and other functional units. It defines how these components are interconnected and how they work together to execute instructions and process data efficiently.
 
-__RV32I Core Micro-Archiecture__
+__RV32I Core Micro-Archiecture__ </br>
 The Below Diagram is the Micro-Architecture of the RV32I core.
-![Micro-architecture](images/micro-architecture.png)
+![Micro-architecture](images/micro-architecture.png)</br>
+
 It contains the following blocks
 - ALU Unit
 - Register File Unit
@@ -46,6 +47,49 @@ It contains the following blocks
 - Data Memory Unit
 - PC Logic Unit
 Control Unit for the above micro architecure is given below
+
 ![Control-Unit](images/control_unit.png)
+
+### RTL Codes
+***
+We've developed RTL codes for our design. we have the following verilog files
+- alu_module.v
+        - _This module contains RTL code for the Arithemetic logic unit._
+- branch_mod.v
+        - _This module contains RTL code for the branch logic._
+- control_logic.v
+        - _This module contains RTL code for the control logic unit._
+- data_mem.v
+        - _This module contains RTL code for the data memory unit._
+- instruction_mem.v
+        - _This module contains RTL code for the Instruction memory unit._
+- instr_decode.v
+        - _This module contains RTL code for the Instruction decoding logic._
+- load_mod.v
+        - _This module contains RTL Code for the selection of load instructions._
+- store_mod.v
+        - _This module contains RTL Code for the selection of store instructions._
+- register_file.v
+        - _This module contains RTL code for the register file unit._
+- pc_logic.v
+        - _This module contains RTL code for the program counter logic._
+- main.v
+        - _This file integrates also the individual verilog files and make it one._
+The Above files are the source files, it contains RTL Code of whole design.
+
+### Test Bench
+***
+After RTL coding, we have to verify it, whether the design is functionally correct or not. In order to verify it, we have to simulate it with stimulus, and verify whether it is functioning correctly or not. For that purpose we have to write a test bench module that tests the main.v module with stimulus and records it's respose, so that we can verify it based on the response.
+In our design we have a directory called test_bench that contains
+- test_bench.v
+        - This module contains verilog code written for testing purpose
+        - main file which is compiled file of the test.
+        - main.vcd, which is vcd file, it contains the all signals which are changed in the simulation.
+
+### Results
+***
+In the Simulation, we run a small program on the developed RTL code and these are the results.
+
+![result](images/result.png)
 
 
