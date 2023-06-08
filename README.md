@@ -38,7 +38,7 @@ _Micro-architecture, also known as computer organization, refers to the internal
 
 __RV32I Core Micro-Archiecture__
 The Below Diagram is the Micro-Architecture of the RV32I core.
-![Micro-architecture](images/micro-architecture.jpg)
+![Micro-architecture](images/micro-architecture.png)
 It contains the following blocks
 - ALU Unit
 - Register File Unit
