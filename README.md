@@ -7,7 +7,7 @@ This Repository contains the source files and test files for the design of RISC-
 - [RISCV ISA](#riscv-isa)
 - [RV32I base core](#rv32i-base-core)
 - [Micro-architecture Implementation](#micro-architecture-implementation)
-- [RTL Coding for each Block in the Mirco-architecture](#rtl-code)
+- [RTL Coding for each Block in the Mirco-architecture](#rtl-codes)
 - [Writing Test Bench](#test-bench) 
 - [Results](#results)
 
