@@ -1,13 +1,13 @@
-`include "/home/karthik/RISCV/source_files/alu_module.v"
-`include "/home/karthik/RISCV/source_files/branch_mod.v"
-`include "/home/karthik/RISCV/source_files/control_logic.v"
-`include "/home/karthik/RISCV/source_files/data_mem.v"
-`include "/home/karthik/RISCV/source_files/instr_decode.v"
-`include "/home/karthik/RISCV/source_files/instruction_mem.v"
-`include "/home/karthik/RISCV/source_files/load_mod.v"
-`include "/home/karthik/RISCV/source_files/store_mod.v"
-`include "/home/karthik/RISCV/source_files/pc_logic.v"
-`include "/home/karthik/RISCV/source_files/register_file.v"
+/*`include "alu_module.v"
+`include "branch_mod.v"
+`include "control_logic.v"
+`include "data_mem.v"
+`include "instr_decode.v"
+`include "instruction_mem.v"
+`include "load_mod.v"
+`include "store_mod.v"
+`include "pc_logic.v"
+`include "register_file.v"
 
 
 module rv32i(
@@ -65,9 +65,10 @@ module rv32i(
 	 assign operand2 = op_src ? read_d2 : immediate_val;
 	 assign operand1 = mux5_sel[1] ? read_d1 : (mux5_sel[0]) ? 32'd0 : next_pc_val;
 
-endmodule
-
-/*module tb;
+endmodule"""
+*/
+`include "/home/karthik/RISCV/source_files/main.v"
+module tb;
 	reg clk;
 	reg reset;
 	wire res;
@@ -82,4 +83,4 @@ endmodule
 		#6 reset = 1'b0;
 		#60 $finish;
 		end
-endmodule*/
+endmodule

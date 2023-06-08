@@ -20,12 +20,14 @@ module decode(
 	assign is_b_type = (instruction[6:2] == 5'b11000);
 	assign is_j_type = (instruction[6:2] == 5'b11011);
 	
-	wire rs2_valid,imm_valid,func3,rs1_valid,opcode;
+	wire rs2_valid,imm_valid,rs1_valid;
+	wire [2:0] func3;
+	wire [6:0] opcode;
 	assign opcode = instruction[6:0];
 	assign rs2 = instruction[24:20];
 	assign rs1 = instruction[19:15];
 	assign funct3 = instruction[14:12];
-	assign rd = instruction[11:7];
+	assign rd = (instruction[11:7]==5'd0) ? 5'dx : instruction[11:7];
 	assign rs2_valid = is_u_type || is_s_type || is_b_type;
 	assign imm_valid = ~(is_r_type);
 	assign rs1_valid = is_r_type || is_s_type || is_b_type || is_i_type;
