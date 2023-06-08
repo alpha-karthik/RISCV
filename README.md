@@ -28,7 +28,7 @@ The RV32I Instruction set includes instructions for common operations such as ar
 The RV32I base core is often used in embedded systems, low-power devices, and applications where a 32-bit word size is sufficient. It provides a minimal yet powerful instruction set that forms the basis for RISC-V processor.
 
 RV32I Core consists of a total of 47 instructions. Out of those 47 i've implemented 42 instructions excluding  FENCE, FENCE.TSO, PAUSE, ECALL, EBREAK. 
-I am attaching the link for the image of those instruction set and instruction types. Link[ ]
+I am attaching the link for the image of those instruction set and instruction types. ![Link](images/instruction_set.jpg)
 
 
 
