@@ -9,6 +9,7 @@ This Repository contains the source files and test files for the design of RISC-
 - [Micro-architecture Implementation](#micro-architecture-implementation)
 - [RTL Coding for each Block in the Mirco-architecture](#rtl-codes)
 - [Writing Test Bench](#test-bench) 
+- [Simulation](#simulation)
 - [Results](#results)
 
 ---
@@ -74,7 +75,7 @@ We've developed RTL codes for our design. we have the following verilog files
 - pc_logic.v
         - _This module contains RTL code for the program counter logic._
 - main.v
-        - _This file integrates also the individual verilog files and make it one._
+        - _This file integrates all the individual verilog files and make it one._</br>
 The Above files are the source files, it contains RTL Code of whole design.
 
 ### Test Bench
@@ -82,9 +83,18 @@ The Above files are the source files, it contains RTL Code of whole design.
 After RTL coding, we have to verify it, whether the design is functionally correct or not. In order to verify it, we have to simulate it with stimulus, and verify whether it is functioning correctly or not. For that purpose we have to write a test bench module that tests the main.v module with stimulus and records it's respose, so that we can verify it based on the response.
 In our design we have a directory called test_bench that contains
 - test_bench.v
-        - This module contains verilog code written for testing purpose
-        - main file which is compiled file of the test.
-        - main.vcd, which is vcd file, it contains the all signals which are changed in the simulation.
+- This module contains verilog code written for testing purpose
+- main file which is compiled file of the test.
+- main.vcd, which is vcd file, it contains the all signals which are changed in the simulation.
+
+### Simulation
+***
+After Writing RTL codes, test benches. We've have to simulate it, for that purpose we are gonna use open source softwares which are [_Icarus Verilog_](https://iverilog.fandom.com/wiki/Getting_Started), [_Gtkwave viewer_](https://gtkwave.sourceforge.net/) . After Installing them, we have to enter the below commands in the terminal
+> $ iverilog -o test test_bench.v </br>
+> $ vvp test </br>
+> $ gtkwave main.vcd </br>
+
+Before Entering the above commands, we have to first open the terminal, in the _test_bench_ folder.
 
 ### Results
 ***
