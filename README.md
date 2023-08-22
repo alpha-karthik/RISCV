@@ -29,7 +29,9 @@ The RV32I Instruction set includes instructions for common operations such as ar
 The RV32I base core is often used in embedded systems, low-power devices, and applications where a 32-bit word size is sufficient. It provides a minimal yet powerful instruction set that forms the basis for RISC-V processor.
 
 RV32I Core consists of a total of 47 instructions. Out of those 47 i've implemented 42 instructions excluding  FENCE, FENCE.TSO, PAUSE, ECALL, EBREAK. 
-I am attaching the link for the image of those instruction set and instruction types. ![Link](images/instruction_set.png)
+I am attaching the link for the image of those instruction set and instruction types. 
+
+![instruction_set](https://github.com/alpha-karthik/RISCV/assets/99242093/0a2b7b57-d601-4320-82e1-b03ec259ec48)
 
 ---
 ### Micro-architecture Implementation
@@ -39,7 +41,8 @@ Micro-architecture, also known as computer organization, refers to the internal 
 
 __RV32I Core Micro-Archiecture__ </br>
 The Below Diagram is the Micro-Architecture of the RV32I core.
-![Micro-architecture](images/micro-architecture.png)</br>
+
+![micro-architecture](https://github.com/alpha-karthik/RISCV/assets/99242093/8f676ae3-43e6-4095-9887-91cea560ae22)
 
 It contains the following blocks
 - ALU Unit
@@ -49,7 +52,9 @@ It contains the following blocks
 - PC Logic Unit
 Control Unit for the above micro architecure is given below
 
-![Control-Unit](images/control_unit.png)
+![control_unit](https://github.com/alpha-karthik/RISCV/assets/99242093/eacd0fd4-8dab-4eb3-91a7-449444222e48)
+
+
 
 ### RTL Codes
 ***
@@ -100,6 +105,7 @@ Before Entering the above commands, we have to first open the terminal, in the _
 ***
 In the Simulation, we run a small program on the developed RTL code and these are the results.
 
-![result](images/result.png)
+
+![result](https://github.com/alpha-karthik/RISCV/assets/99242093/9ea0c310-ea20-472f-847f-7acdda07124a)
 
 
